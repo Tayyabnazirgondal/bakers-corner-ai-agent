@@ -1,0 +1,167 @@
+{
+  "name": "KB Loader - Bakers Corner",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -400,
+        -48
+      ],
+      "id": "6832a0f6-94ab-4706-b669-ef5aed5f8872",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"items\": [\n    {\"category\": \"menu\", \"content\": \"Q: What kinds of cakes do you make?\\nA: At Bakers Corner, we specialize in custom-made cakes for every occasion — birthdays, weddings, anniversaries, and corporate events. Our menu includes classic flavors like chocolate fudge, vanilla bean, red velvet, carrot cake, and cheesecake, plus seasonal specials. We also offer eggless and gluten-free options on request.\"},\n    {\"category\": \"menu\", \"content\": \"Q: What sizes are available?\\nA: Our cakes come in four standard sizes: 1 lb (serves 4-6), 2 lb (serves 8-10), 3 lb (serves 12-15), and 5 lb (serves 20-25). For larger events, we build tiered cakes up to 4 tiers — please contact us for a custom quote.\"},\n    {\"category\": \"menu\", \"content\": \"Q: Do you offer cupcakes and other baked goods?\\nA: Yes! Beyond cakes, we bake fresh cupcakes (available by the half-dozen or dozen), brownies, cheesecake slices, cookies, and seasonal pastries. Full menu is available on request.\"},\n    {\"category\": \"menu\", \"content\": \"Q: Can I request a custom design or theme?\\nA: Absolutely. We do custom themed cakes — cartoon characters, photo prints, corporate logos, floral designs, and more. Share your idea or reference image via WhatsApp, and our team will confirm feasibility and pricing within a few hours.\"},\n    {\"category\": \"pricing\", \"content\": \"Q: How much does a basic cake cost?\\nA: Our standard cake pricing starts at $35 for a 1 lb cake, $60 for 2 lb, $85 for 3 lb, and $135 for 5 lb. These prices are for classic flavors with simple designs. Premium flavors, custom themes, and tiered cakes are priced separately based on complexity.\"},\n    {\"category\": \"pricing\", \"content\": \"Q: What's the price for a custom themed cake?\\nA: Custom themed cakes typically start at $75 for a 2 lb cake and scale based on design complexity, edible prints, fondant work, and size. Wedding and tiered cakes usually range from $200 to $600+. Share your design idea for an exact quote.\"},\n    {\"category\": \"pricing\", \"content\": \"Q: Do you have package deals for events?\\nA: Yes — we offer event bundles that combine a main cake with cupcakes, brownies, or dessert platters at a discounted rate. Our most popular is the Birthday Bundle (2 lb cake + 12 cupcakes) at $95. Corporate and wedding packages are available on request.\"},\n    {\"category\": \"pricing\", \"content\": \"Q: Are there any additional charges?\\nA: Delivery within Manhattan is free for orders over $75. Below that, a flat $10 delivery fee applies. Custom edible prints add $15, and same-day rush orders add a 20% urgency fee.\"},\n    {\"category\": \"pricing\", \"content\": \"Q: Do you offer discounts?\\nA: We offer 10% off on your first order, and returning customers enjoy a loyalty discount on every 5th order. Bulk corporate orders (20+ items) receive custom pricing — reach out for a quote.\"},\n    {\"category\": \"delivery\", \"content\": \"Q: Do you deliver across New York City?\\nA: Yes, we deliver across all five boroughs of NYC — Manhattan, Brooklyn, Queens, the Bronx, and Staten Island. Delivery to nearby areas like Jersey City and Hoboken is also available with a small surcharge.\"},\n    {\"category\": \"delivery\", \"content\": \"Q: What are your delivery timings?\\nA: We deliver 7 days a week between 10:00 AM and 9:00 PM. Same-day delivery is available for orders placed before 12:00 PM. For specific time slots (like a birthday party at 6:00 PM), please mention the exact time when ordering.\"},\n    {\"category\": \"delivery\", \"content\": \"Q: How much does delivery cost?\\nA: Delivery within Manhattan is free for orders over $75. Below that, a flat $10 fee applies. Delivery to Brooklyn, Queens, and the Bronx is $12, and Staten Island is $18. Jersey City and Hoboken are $20.\"},\n    {\"category\": \"delivery\", \"content\": \"Q: How long in advance should I place an order?\\nA: For standard cakes, 24 hours notice is preferred. Custom themed or tiered cakes require 3-5 days advance notice. Wedding cakes should be booked at least 2 weeks in advance to ensure availability and design perfection.\"},\n    {\"category\": \"delivery\", \"content\": \"Q: What if I need same-day delivery?\\nA: Same-day delivery is possible for our ready-menu cakes if ordered before 12:00 PM. A 20% urgency fee applies. Custom designs are not available for same-day delivery.\"},\n    {\"category\": \"order_process\", \"content\": \"Q: How do I place an order?\\nA: You can place an order by messaging us on WhatsApp, calling our shop, or visiting in person. Share the occasion, cake size, flavor, delivery date, and address. We'll confirm availability and send a price quote within a few hours.\"},\n    {\"category\": \"order_process\", \"content\": \"Q: What information do you need for a custom order?\\nA: For custom cakes, we need: the occasion, preferred size, flavor choice, design idea or reference image, delivery date and time, and full delivery address. The more detail you share, the better we can match your vision.\"},\n    {\"category\": \"order_process\", \"content\": \"Q: How do I pay?\\nA: We accept credit and debit cards, Apple Pay, Google Pay, Zelle, Venmo, and cash on delivery (Manhattan only). For custom orders above $150, a 50% advance is required to confirm the booking; the remainder is paid on delivery.\"},\n    {\"category\": \"order_process\", \"content\": \"Q: Can I cancel or change my order?\\nA: Standard cake orders can be changed or canceled up to 24 hours before delivery for a full refund. Custom themed and tiered cakes require 72 hours notice — cancellations after that receive a 50% refund since ingredients and prep have already begun.\"},\n    {\"category\": \"order_process\", \"content\": \"Q: Do you take corporate or bulk orders?\\nA: Yes, we regularly serve corporate clients for office parties, product launches, and client gifting. Bulk orders (20+ items) get custom pricing and dedicated coordination. Email us or message on WhatsApp for a corporate quote.\"},\n    {\"category\": \"timings_location\", \"content\": \"Q: What are your shop hours?\\nA: Our shop is open Monday to Saturday from 9:00 AM to 10:00 PM, and Sunday from 11:00 AM to 8:00 PM. We are closed on major holidays like Christmas Day, Thanksgiving Day, and New Year's Day.\"},\n    {\"category\": \"timings_location\", \"content\": \"Q: Where is your shop located?\\nA: Bakers Corner is located at 245 W 38th Street, Midtown Manhattan, New York, NY 10018. We are a 5-minute walk from Times Square and easily accessible by subway (lines A, C, E, N, Q, R, W to 42nd Street-Port Authority).\"},\n    {\"category\": \"timings_location\", \"content\": \"Q: Can I visit the shop to pick out my cake in person?\\nA: Absolutely — walk-ins are welcome during shop hours. For custom consultations (wedding cakes, tiered designs, tastings), we recommend booking an appointment so our head baker can give you dedicated time.\"},\n    {\"category\": \"timings_location\", \"content\": \"Q: How can I contact you?\\nA: You can reach us on WhatsApp, call our shop line, or email us. WhatsApp is the fastest way to get a response — we typically reply within a few minutes during business hours, and our AI assistant handles common questions 24/7.\"},\n    {\"category\": \"complaints_refunds\", \"content\": \"Q: What if I'm not satisfied with my cake?\\nA: Your satisfaction is our top priority. If you're not happy with your cake, please contact us within 24 hours of delivery with a photo and description of the issue. We'll review the case and offer a replacement, partial refund, or credit for a future order depending on the situation.\"},\n    {\"category\": \"complaints_refunds\", \"content\": \"Q: What is your refund policy?\\nA: Refunds are handled case-by-case. Quality issues (wrong flavor, damaged cake, missing items) receive a full refund or free replacement. Change-of-mind cancellations follow our order cancellation timeline — 24 hours notice for standard cakes, 72 hours for custom.\"},\n    {\"category\": \"complaints_refunds\", \"content\": \"Q: What if my cake arrives damaged?\\nA: We take great care in packaging and delivery, but if your cake arrives damaged, please share clear photos immediately on WhatsApp. Our team will arrange a replacement or refund the same day, depending on your preference and event timing.\"},\n    {\"category\": \"complaints_refunds\", \"content\": \"Q: How do I share feedback or file a complaint?\\nA: Share your feedback directly on WhatsApp, email us, or leave a review on Google. Serious complaints are escalated to our shop owner within a few hours, and you'll receive a personal response to resolve the matter.\"}\n  ]\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -176,
+        -48
+      ],
+      "id": "b07ba131-2d5d-4e60-8c4e-eb5aa4830371",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "items",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        0,
+        -32
+      ],
+      "id": "4784f437-ba2d-45b9-95a8-bbd66329d911",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/embeddings",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "openAiApi",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"model\": \"text-embedding-3-small\",\n  \"input\": {{ JSON.stringify($json.content) }}\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        192,
+        -32
+      ],
+      "id": "4ffbbd45-fa5e-4147-97b3-aed8dfe22815",
+      "name": "HTTP Request",
+      "credentials": {
+        "openAiApi": {
+          "id": "H5hZEDsze1Qm4Q1P",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "tableId": "knowledge_base",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "content",
+              "fieldValue": "=={{ $('Split Out').item.json.content }}"
+            },
+            {
+              "fieldId": "embedding",
+              "fieldValue": "={{ JSON.stringify($json.data[0].embedding) }}"
+            },
+            {
+              "fieldId": "metadata",
+              "fieldValue": "=={{ { \"category\": $('Split Out').item.json.category } }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        400,
+        -32
+      ],
+      "id": "79b22710-ab17-4b2e-85cf-920c867e32f1",
+      "name": "Create a row",
+      "credentials": {
+        "supabaseApi": {
+          "id": "SadpyM7mEwwEbDsw",
+          "name": "Supabase account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Create a row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "4cd9284c-c450-4c48-8344-a4ff6b341440",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e8d7c51c3d7d6de06f9cd79b953c9e3f94f1c35c93afb3ebbdc0184791938846"
+  },
+  "nodeGroups": [],
+  "id": "YXPcFW7BJePYjXa3",
+  "tags": []
+}
